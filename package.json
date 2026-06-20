@@ -1,0 +1,44 @@
+{
+  "name": "tradepulse-backend",
+  "version": "1.0.0",
+  "description": "TradePulse AI Trading Journal - Backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "migrate": "node src/database/migrate.js",
+    "seed": "node src/database/seed.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "bcryptjs": "^2.4.3",
+    "bull": "^4.12.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "express-validator": "^7.1.0",
+    "googleapis": "^140.0.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "multer-s3": "^3.0.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.13",
+    "otplib": "^12.0.1",
+    "papa": "^5.4.1",
+    "papaparse": "^5.4.1",
+    "pg": "^8.12.0",
+    "qrcode": "^1.5.3",
+    "redis": "^4.6.14",
+    "speakeasy": "^2.0.0",
+    "tronweb": "^5.3.2",
+    "uuid": "^10.0.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
